@@ -17,6 +17,7 @@ export const login = async ({ email, password }) => {
       ] = `Bearer ${data.data.accessToken}`;
     }
   } catch (error) {
+    console.log("error papito");
     console.log(error);
   }
 };
