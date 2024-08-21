@@ -1,8 +1,11 @@
+import { ChakraProvider, Box} from "@chakra-ui/react";
 function App() {
   return (
-    <>
-      <h1>Pagina principal</h1>
-    </>
+    <ChakraProvider>
+      <Box width={"100%"} backgroundColor={"white"}>
+      ffdsafsaf
+      </Box>
+    </ChakraProvider>
   );
 }
 

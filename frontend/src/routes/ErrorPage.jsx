@@ -1,4 +1,10 @@
+import { ChakraProvider } from '@chakra-ui/react';
 import { useRouteError } from 'react-router-dom';
+import {
+  Box,
+  Text,
+} from '@chakra-ui/react';
+
 
 const ErrorPage = () => {
   const error = useRouteError();
@@ -15,10 +21,12 @@ const ErrorPage = () => {
   });
 
   return (
-    <div>
-      <h1>Oops!</h1>
-      <p>Sorry, un error inesperado a ocurrido.</p>
-    </div>
+    <ChakraProvider>
+      <Box>
+        <Text>Oops!</Text>
+        <p>Sorry, un error inesperado a ocurrido.</p>
+      </Box>
+    </ChakraProvider>
   );
 };
 
